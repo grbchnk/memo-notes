@@ -97,6 +97,7 @@ body {
   gap: 20px;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
+  padding: 0px 15vw;
 }
 
 .note-container::-webkit-scrollbar {
@@ -107,7 +108,7 @@ body {
   overflow: hidden;
   border: solid 3px black;
   border-radius: 20px;
-  min-width: 70%;
+  min-width: 70vw;
   background-color: #fff;
   scroll-snap-align: center;
 }
@@ -130,30 +131,18 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.note__desc-inner {
+.note__input-inner {
   height: calc(100% - 40px);
-}
-.note__desc {
-  background-color: #b7b7b7;
-  font-size: 16px;
-  padding: 20px;
-  width: 100%;
 }
 .note__input {
   border: none;
   outline: none;
   white-space: pre-wrap;
-  font-size: 12px;
+  font-size: 14px;
   padding: 20px;
   width: 100%;
   resize: none;
   height: 100%;
-}
-.note:first-child {
-  margin-left: 15%;
-}
-.note:last-child {
-  margin-right: 15%;
 }
 
 @media (min-width: 600px) {

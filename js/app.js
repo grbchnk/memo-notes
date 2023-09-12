@@ -150,7 +150,7 @@ function renderNotes() {
       <input type="checkbox" id="checkbox4" onclick="changeColor(4, this)" />
     </div>
   </div>
-  <div class="note__desc-inner">
+  <div class="note__input-inner">
     <textarea class="note__input" oninput="updateNoteMemo(${activeMiniNotes.indexOf(
       note
     )}, this)">${note.memo}</textarea>
@@ -170,8 +170,8 @@ function renderNotes() {
 
   const notesList = document.querySelectorAll(".note")
 
-  notesList[notesList.length - 1].style.marginRight = "15vw"
-  notesList[0].style.marginLeft = "15vw"
+  // notesList[notesList.length - 1].style.marginRight = "15vw"
+  // notesList[0].style.marginLeft = "15vw"
 
   notesList.forEach((item) => {
     item.addEventListener("click", function () {
