@@ -136,6 +136,7 @@ body {
   height: calc(100% - 40px);
 }
 .note__input {
+  font-family: monospace;
   border: none;
   outline: none;
   border-radius: 0px;
