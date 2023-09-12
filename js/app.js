@@ -170,6 +170,9 @@ function renderNotes() {
 
   const notesList = document.querySelectorAll(".note")
 
+  notesList[notesList.length - 1].style.marginRight = "15%"
+  notesList[0].style.marginLeft = "15%"
+
   notesList.forEach((item) => {
     item.addEventListener("click", function () {
       item.scrollIntoView({ behavior: "smooth", block: "center" })
